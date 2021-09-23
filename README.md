@@ -6,12 +6,15 @@ Project Description
 
 1. Vision and Goals Of The Project:
 
-Our project aims to extensively research and test Python libraries to improve on the current prototype that is actively being used by our client. A main vision is to have a working new prototype that performs faster computation for processing the data collected from the remote sensing system. High level goals for the project include:
+Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system.
+The system is actively being used by our client, while running on a Google Cloud Platform with significant performance bottlenecks.
+A main vision is to have a working system that improves upon the existing prototype by performing faster computation for processing the data collected from the remote sensing system. High level goals for the project include:
 
 * Identify current system performace and the system's bottlenecks.
 * Explore Python's computation libraries. 
-* Thoroughly test each of these libraries' performance and comapare with current execution.
+* Thoroughly test each of these libraries' performance and comapare with current execution, evaluating tradeoffs such as speed and memory.
 * Integrate the more effective libraries into the system.
+* Improve over the existing State Of The Art on remote scaling data processing
 
 2. Users/Personas Of The Project:
 
@@ -70,7 +73,7 @@ At the end of the project timeline the team should have substantial documentatio
 
 The team will split the project components in 4 high-level parts:
 
-1. Deploy Ray on a small cluster on MOC and run the existing satellite data processing system.
+1. Deploy Ray on a small cluster on MOC and run the existing prototype of satellite data processing system.
 2. Study the application to identify bottlenecks.
     * Research and compute the performance of various Python libraries.
 3. Build a faster and more scalable prototype based on the previous findings.

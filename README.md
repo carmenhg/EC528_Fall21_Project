@@ -36,7 +36,7 @@ It should be specific enough that you can determine that e.g. feature A is in-sc
 4. Solution Concept
 
 The prototype consists of a platform built on Ray that takes Raw satelitte daqta images, turns them into time-series and feeds them into a linear regression model for analysis. This plaform will help researchers study local effects of climate change on ecosystems all over the world. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
-Our solution will 
+Our final solution will be a scalable Python application for remote sensing data processing in the cloud. It will download real satellite image data fom web archives, transform it into time-series, and apply the linear regression model to identify land cover changes over large periods of time. 
 
 This section provides a high-level outline of the solution.
 

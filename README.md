@@ -43,6 +43,9 @@ It should be specific enough that you can determine that e.g. feature A is in-sc
 
 4. Solution Concept
 
+The prototype consists of a platform built on Ray that takes Raw satelitte daqta images, turns them into time-series and feeds them into a linear regression model for analysis. This plaform will help researchers study local effects of climate change on ecosystems all over the world. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
+Our solution will 
+
 This section provides a high-level outline of the solution.
 
 Global Architectural Structure Of the Project:

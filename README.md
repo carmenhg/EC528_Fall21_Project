@@ -29,17 +29,27 @@ The personas of the project other than the end users will be the developers who 
 
 Each developers working on their respective components can change their system, and the internals of their part of the pipeline. 
 
-#There will also be a system wide administrator that can make changes to the system level configuration affecting different parts of the end to end pipeline.
+<!--#There will also be a system wide administrator that can make changes to the system level configuration affecting different parts of the end to end pipeline.-->
 
-#This section describes the principal user roles of the project together with the key characteristics of these roles. This information will inform the design and the user scenarios. A complete set of roles helps in ensuring that high-level requirements can be identified in the product backlog.
+<!--#This section describes the principal user roles of the project together with the key characteristics of these roles. This information will inform the design and the user scenarios. A complete set of roles helps in ensuring that high-level requirements can be identified in the product backlog.-->
 
-#Again, the description should be specific enough that you can determine whether user A, performing action B, is a member of the set of users the project is designed for.
+<!--#Again, the description should be specific enough that you can determine whether user A, performing action B, is a member of the set of users the project is designed for.-->
 
 3. Scope and Features Of The Project:
 
-The Scope places a boundary around the solution by detailing the range of features and functions of the project. This section helps to clarify the solution scope and can explicitly state what will not be delivered as well.
+The project prototype, as of now, is hosted in the Google Cloud Platform. 
 
-It should be specific enough that you can determine that e.g. feature A is in-scope, while feature B is out-of-scope.
+We will be deploying the project clusters of Mass Open Cloud (MOC).
+
+The project will run initially with the existing prototype at the MOC. 
+
+After the initial setup, we will profile the various processes of the pre-processing part of the pipeline, which uses the Python library, Xarray: a multidimensional array processing library.
+
+By using analytics tools, our goal is to identify the bottlenecks of the pre-processing pipeline, and explore the areas where it can be improved upon.
+
+We will implement, and profile other libraries other than Xarray, which might help us achieve better performance on the pre-processing step of the pipeline.
+
+The final goal of the project is to create  a much faster, and scalabale end to end large scale remote sensing data processing pipeline running in the MOC.
 
 4. Solution Concept
 

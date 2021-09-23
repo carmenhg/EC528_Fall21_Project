@@ -1,25 +1,17 @@
 # EC528_Fall21_Project
-EC528: Cloud Computing. Scaling remote sensing data processing in the Cloud with Ray.
+EC528: Cloud Computing. 
+Project Name: Scaling remote sensing data processing in the Cloud with Ray.
 
-Project Description Template
-
-The purpose of this Project Description is to present the ideas proposed and decisions made during the preliminary envisioning and inception phase of the project. The goal is to analyze an initial concept proposal at a strategic level of detail and attain/compose an agreement between the project team members and the project customer (mentors and instructors) on the desired solution and overall project direction.
-
-This template proposal contains a number of sections, which you can edit/modify/add/delete/organize as you like. Some key sections we’d like to have in the proposal are:
-
-Vision: An executive summary of the vision, goals, users, and general scope of the intended project.
-
-Solution Concept: the approach the project team will take to meet the business needs. This section also provides an overview of the architectural and technical designs made for implementing the project.
-
-Scope: the boundary of the solution defined by itemizing the intended features and functions in detail, determining what is out of scope, a release strategy and possibly the criteria by which the solution will be accepted by users and operations.
-
-Project Proposal can be used during the follow-up analysis and design meetings to give context to efforts of more detailed technical specifications and plans. It provides a clear direction for the project team; outlines project goals, priorities, and constraints; and sets expectations.
+Project Description 
 
 1. Vision and Goals Of The Project:
 
-The vision section describes the final desired state of the project once the project is complete. It also specifies the key goals of the project. This section provides a context for decision-making. A shared vision among all team members can help ensuring that the solution meets the intended goals. A solid vision clarifies perspective and facilitates decision-making.
+Our project aims to extensively research and test Python libraries to improve on the current prototype that is actively being used by our client. A main vision is to have a working new prototype that performs faster computation for processing the data collected from the remote sensing system. High level goals for the project include:
 
-The vision statement should be specific enough that you can look at a proposed solution and say either "yes, this meets the vision and goals", or "no, it does not".
+* Identify current system performace and the system's bottlenecks.
+* Explore Python's computation libraries. 
+* Thoroughly test each of these libraries' performance and comapare with current execution.
+* Integrate the more effective libraries into the system.
 
 2. Users/Personas Of The Project:
 
@@ -47,7 +39,11 @@ This section discusses the implications and reasons of the design decisions made
 
 5. Acceptance criteria
 
-This section discusses the minimum acceptance criteria at the end of the project and stretch goals.
+At the end of the project timeline the team should have substantial documentation on the performance of the various Python Libraries explored. The final prototype should also have one or more of these instegrated. Stretch goals are:
+
+* Integration and perfromace reviews of all the libraries that can be explored
+* Final performance of 2TB of data processed in 2 hours. 
+
 
 6. Release Planning:
 

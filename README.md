@@ -1,6 +1,7 @@
 # EC528_Fall21_Project
 EC528: Cloud Computing. 
 Project Name: Scaling remote sensing data processing in the Cloud with Ray.
+Team Members: Carmen Hurtado
 
 Project Description 
 

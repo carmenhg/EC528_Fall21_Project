@@ -15,9 +15,17 @@ Our project aims to extensively research and test Python libraries to improve on
 
 2. Users/Personas Of The Project:
 
-This section describes the principal user roles of the project together with the key characteristics of these roles. This information will inform the design and the user scenarios. A complete set of roles helps in ensuring that high-level requirements can be identified in the product backlog.
+The end users of the projects are research scientists who study remote sensing images datasets. The project will be open source and available to the community.
 
-Again, the description should be specific enough that you can determine whether user A, performing action B, is a member of the set of users the project is designed for.
+The personas of the project other than the end users will be the developers who work on the different components of the end to end data processing pipeline, from pre-processing, to model building and inference.
+
+Each developers working on their respective components can change their system, and the internals of their part of the pipeline. 
+
+#There will also be a system wide administrator that can make changes to the system level configuration affecting different parts of the end to end pipeline.
+
+#This section describes the principal user roles of the project together with the key characteristics of these roles. This information will inform the design and the user scenarios. A complete set of roles helps in ensuring that high-level requirements can be identified in the product backlog.
+
+#Again, the description should be specific enough that you can determine whether user A, performing action B, is a member of the set of users the project is designed for.
 
 3. Scope and Features Of The Project:
 
@@ -26,6 +34,9 @@ The Scope places a boundary around the solution by detailing the range of featur
 It should be specific enough that you can determine that e.g. feature A is in-scope, while feature B is out-of-scope.
 
 4. Solution Concept
+
+The prototype consists of a platform built on Ray that takes Raw satelitte daqta images, turns them into time-series and feeds them into a linear regression model for analysis. This plaform will help researchers study local effects of climate change on ecosystems all over the world. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
+Our solution will 
 
 This section provides a high-level outline of the solution.
 

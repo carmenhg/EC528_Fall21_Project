@@ -58,8 +58,11 @@ At the end of the project timeline the team should have substantial documentatio
 
 6. Release Planning:
 
-Release planning section describes how the project will deliver incremental sets of features and functions in a series of releases to completion. Identification of user stories associated with iterations that will ease/guide sprint planning sessions is encouraged. Higher level details for the first iteration is expected.
+The team will split the project components in 4 high-level parts:
 
-General comments
+1. Deploy Ray on a small cluster on MOC and run the existing satellite data processing system.
+2. Study the application to identify bottlenecks.
+    * Research and compute the performance of various Python libraries.
+3. Build a faster and more scalable prototype based on the previous findings.
+4. Do a large-scale experiment on MOC using real satellite data from one of the Google archives and report end-to-end performance.
 
-Remember that you can always add features at the end of the semester, but you can't go back in time and gain back time you spent on features that you couldn't complete.

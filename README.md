@@ -62,8 +62,12 @@ Global Architectural Structure Of the Project:
 
 Design Implications and Discussion:
 
-TO BE COMPLETED
-
+As it can be seen in the architecture diagram, our project addresses the need to scale, and improve the performance of the existing system before the linear 
+regression model is applied from the data. Other components of the systems, including the model building, and the prediction are already scaled and efficient.
+The major bottleneck of the project is speeding up operations during the phase of pre-processing raw satelite images to time series. We will understand the
+current implementation of the pre-processing system, investigate where the expensive operations are happening, and determine how we can improve upon it by
+testing and instrumenting other alternative approaches. 
+The improvements will bring on this phase of the pipeline will alow the whole system to be end-to-end scalable. 
 
 ## 5. Acceptance criteria
 

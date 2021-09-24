@@ -60,6 +60,7 @@ Global Architectural Structure Of the Project:
 
 Design Implications and Discussion:
 
+TO BE COMPLETED
 
 
 5. Acceptance criteria

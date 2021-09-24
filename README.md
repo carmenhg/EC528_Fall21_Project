@@ -35,11 +35,11 @@ Each developers working on their respective components can change their system, 
 
 ## 3. Scope and Features Of The Project:
 
-The project prototype, as of now, is hosted in the Google Cloud Platform. 
+The raw image datasets are currently stored in the Google Cloud Platform. 
 
-We will be deploying the project clusters of Mass Open Cloud (MOC).
+The existing prototype is currently running in the Mass Open Cloud (MOC).
 
-The project will run initially with the existing prototype at the MOC. 
+The project will run initially with the dev version of the existing prototype at MOC. 
 
 After the initial setup, we will profile the various processes of the pre-processing part of the pipeline, which uses the Python library, Xarray: a multidimensional array processing library.
 

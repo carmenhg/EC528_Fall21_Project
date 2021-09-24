@@ -10,7 +10,7 @@ Project Description
 ## 1. Vision and Goals Of The Project:
 
 Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system.
-The system is actively being used by our client, while running on a Google Cloud Platform with significant performance bottlenecks.
+The system is actively being used by our client, while running on the MOC platform with significant performance bottlenecks.
 A main vision is to have a working system that improves upon the existing prototype by performing faster computation for processing the data collected from the remote sensing system. High level goals for the project include:
 
 * Identify current system performace and the system's bottlenecks.

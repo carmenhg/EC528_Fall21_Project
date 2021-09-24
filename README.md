@@ -58,7 +58,7 @@ This section provides a high-level outline of the solution.
 
 Global Architectural Structure Of the Project:
 
-<img src="/images/diagram.jpg" style="height: 400px; width:400px;"/>
+<img src="/images/diagram.jpg" style="height: 400px; width:600px;"/>
 
 Design Implications and Discussion:
 

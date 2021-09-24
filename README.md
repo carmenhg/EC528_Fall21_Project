@@ -86,3 +86,6 @@ The team will split the project components in 4 high-level parts:
     * Research and compute the performance of various Python libraries.
 3. Build a faster and more scalable prototype based on the previous findings.
 4. Do a large-scale experiment on MOC using real satellite data from one of the Google archives and report end-to-end performance.
+
+## 7. Computing Resources
+The systems needs to run on OpenStack either on MOC or NERC depending on support. 

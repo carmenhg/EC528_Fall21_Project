@@ -5,7 +5,7 @@ Team Members: Carmen Hurtado
 
 Project Description 
 
-1. Vision and Goals Of The Project:
+## 1. Vision and Goals Of The Project:
 
 Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system.
 The system is actively being used by our client, while running on a Google Cloud Platform with significant performance bottlenecks.
@@ -17,7 +17,7 @@ A main vision is to have a working system that improves upon the existing protot
 * Integrate the more effective libraries into the system.
 * Improve over the existing State Of The Art on remote scaling data processing
 
-2. Users/Personas Of The Project:
+## 2. Users/Personas Of The Project:
 
 The end users of the projects are research scientists who study remote sensing images datasets. The project will be open source and available to the community.
 
@@ -31,7 +31,7 @@ Each developers working on their respective components can change their system, 
 
 <!--#Again, the description should be specific enough that you can determine whether user A, performing action B, is a member of the set of users the project is designed for.-->
 
-3. Scope and Features Of The Project:
+## 3. Scope and Features Of The Project:
 
 The project prototype, as of now, is hosted in the Google Cloud Platform. 
 
@@ -47,7 +47,7 @@ We will implement, and profile other libraries other than Xarray, which might he
 
 The final goal of the project is to create  a much faster, and scalabale end to end large scale remote sensing data processing pipeline running in the MOC.
 
-4. Solution Concept
+## 4. Solution Concept
 
 Our client will provide us with a working prototype consisting of a platform built on Ray that takes Raw satelitte data images, turns them into time-series and feeds them into a linear regression model for analysis. This plaform will help researchers study local effects of climate change on ecosystems all over the world. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
 Our final solution will be an improved prototype of this system as a scalable Python application hosted on MOC. 
@@ -63,7 +63,7 @@ Design Implications and Discussion:
 TO BE COMPLETED
 
 
-5. Acceptance criteria
+## 5. Acceptance criteria
 
 At the end of the project timeline the team should have substantial documentation on the performance of the various Python Libraries explored. The final prototype should also have one or more of these instegrated. Stretch goals are:
 
@@ -71,7 +71,7 @@ At the end of the project timeline the team should have substantial documentatio
 * Final performance of 2TB of data processed in 2 hours. 
 
 
-6. Release Planning:
+## 6. Release Planning:
 
 The team will split the project components in 4 high-level parts:
 

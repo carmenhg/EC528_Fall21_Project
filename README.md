@@ -5,11 +5,13 @@ Project Name: Scaling remote sensing data processing in the Cloud with Ray.
 
 Team Members: Carmen Hurtado, Pujan Paudel, Jean Marc Achkar
 
-Project Description 
+Mentor: John Liagouris
+
+# Project Description 
 
 ## 1. Vision and Goals Of The Project:
 
-Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system.
+Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system that uses Ray for computation parallelization.
 The system is actively being used by our client, while running on the MOC platform with significant performance bottlenecks.
 A main vision is to have a working system that improves upon the existing prototype by performing faster computation for processing the data collected from the remote sensing system. High level goals for the project include:
 
@@ -17,6 +19,7 @@ A main vision is to have a working system that improves upon the existing protot
 * Explore Python's computation libraries. 
 * Thoroughly test each of these libraries' performance and comapare with current execution, evaluating tradeoffs such as speed and memory.
 * Integrate the more effective libraries into the system.
+* Profile Ray application for bottelnecks in parallelization. 
 * Improve over the existing State Of The Art on remote scaling data processing
 
 ## 2. Users/Personas Of The Project:
@@ -34,6 +37,8 @@ Each developers working on their respective components can change their system, 
 <!--#Again, the description should be specific enough that you can determine whether user A, performing action B, is a member of the set of users the project is designed for.-->
 
 ## 3. Scope and Features Of The Project:
+
+The prototype is currently a distributed application built with [Ray](https://www.ray.io)
 
 The raw image datasets are currently stored in the Google Cloud Platform. 
 

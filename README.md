@@ -1,17 +1,17 @@
 # EC528_Fall21_Project
 EC528: Cloud Computing. 
 
-Project Name: Scaling remote sensing data processing in the Cloud with Ray.
+Project: Scaling remote sensing data processing in the Cloud with Ray.
 
-Team Members: Carmen Hurtado, Pujan Paudel, Jean Marc Achkar
+Team Members: Carmen Hurtado, Pujan Paudel, Jean Marc Achkar.
 
-Mentor: John Liagouris
+Mentor: John Liagouris.
 
 # Project Description 
 
 ## 1. Vision and Goals Of The Project:
 
-Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system that uses Ray for computation parallelization.
+Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system that uses Ray for computation parallelization. Furthermore, we aim to profile the current uses of Ray in the application to identify its performance. 
 The system is actively being used by our client, while running on the MOC platform with significant performance bottlenecks.
 A main vision is to have a working system that improves upon the existing prototype by performing faster computation for processing the data collected from the remote sensing system. High level goals for the project include:
 
@@ -19,16 +19,14 @@ A main vision is to have a working system that improves upon the existing protot
 * Explore Python's computation libraries. 
 * Thoroughly test each of these libraries' performance and comapare with current execution, evaluating tradeoffs such as speed and memory.
 * Integrate the more effective libraries into the system.
-* Profile Ray application for bottelnecks in parallelization. 
-* Improve over the existing State Of The Art on remote scaling data processing
+* Profile Ray application for bottelnecks in parallelization and processes distribution. 
+* Improve over the existing State Of The Art on remote scaling data processing.
 
 ## 2. Users/Personas Of The Project:
 
-The end users of the projects are research scientists who study remote sensing images datasets. The project will be open source and available to the community.
+The end users of the finalized prototype are research scientists at NASA JPL who study these remote sensing images datasets. However, the project will be open source and thus available to the community.
 
-The personas of the project other than the end users will be the developers who work on the different components of the end to end data processing pipeline, from pre-processing, to model building and inference.
-
-Each developers working on their respective components can change their system, and the internals of their part of the pipeline. 
+The personas of our project  contribution to the working prototype other than the end users will be the developers who work on the different components of the end to end data processing pipeline, from pre-processing, to model building and inference. Our improvement to the prototype will make the developing of it easier. Each developer working on their respective components can change their system, and the internals of their part of the pipeline while experiencing faster results. 
 
 <!--#There will also be a system wide administrator that can make changes to the system level configuration affecting different parts of the end to end pipeline.-->
 
@@ -39,14 +37,20 @@ Each developers working on their respective components can change their system, 
 ## 3. Scope and Features Of The Project:
 
 The prototype is currently a distributed application built with [Ray](https://www.ray.io)
+* A distributed framework for emerging AI applications.
+* It uses remote objects, tasks, and actors to create threads that parallelize the Python code.
+* Easy incorporation onto sequential Python code
+* Easily manageable depending on computing resources available.
 
 The raw image datasets are currently stored in the Google Cloud Platform. 
 
 The existing prototype is currently running in the Mass Open Cloud (MOC).
 
-The project will run initially with the dev version of the existing prototype at MOC. 
+Our project will run initially with the dev version of the existing prototype at MOC. 
 
-After the initial setup, we will profile the various processes of the pre-processing part of the pipeline, which uses the Python library, Xarray: a multidimensional array processing library.
+After the initial setup, we will profile the existing uses of Ray as a whole while mostly focusing on the data pre-processing part on the pipeline. 
+
+The next steps will be to profile the various processes which use the Python library [Xarray](http://xarray.pydata.org/en/stable/getting-started-guide/quick-overview.html): a multidimensional array processing library.
 
 By using analytics tools, our goal is to identify the bottlenecks of the pre-processing pipeline, and explore the areas where it can be improved upon.
 
@@ -58,8 +62,6 @@ The final goal of the project is to create  a much faster, and scalabale end to 
 
 Our client will provide us with a working prototype consisting of a platform built on Ray that takes Raw satelitte data images, turns them into time-series and feeds them into a linear regression model for analysis. This plaform will help researchers study local effects of climate change on ecosystems all over the world. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
 Our final solution will be an improved prototype of this system as a scalable Python application hosted on MOC. 
-
-This section provides a high-level outline of the solution.
 
 Global Architectural Structure Of the Project:
 
@@ -76,7 +78,7 @@ The improvements will bring on this phase of the pipeline will alow the whole sy
 
 ## 5. Acceptance criteria
 
-At the end of the project timeline the team should have substantial documentation on the performance of the various Python Libraries explored. The final prototype should also have one or more of these instegrated. Stretch goals are:
+At the end of the project timeline the team should have substantial documentation on the performance of the various Python Libraries explored. The final prototype should also have one or more of these instegrated. In addition we will have extensive data results on how Ray is being completely optimized for this prototype. Stretch goals are:
 
 * Integration and perfromace reviews of all the libraries that can be explored
 * Final performance of 2TB of data processed in 2 hours. 
@@ -88,6 +90,7 @@ The team will split the project components in 4 high-level parts:
 
 1. Deploy Ray on a small cluster on MOC and run the existing prototype of satellite data processing system.
 2. Study the application to identify bottlenecks.
+    * Profile Ray as it is being used and identify any improvement opportunities.
     * Research and compute the performance of various Python libraries.
 3. Build a faster and more scalable prototype based on the previous findings.
 4. Do a large-scale experiment on MOC using real satellite data from one of the Google archives and report end-to-end performance.

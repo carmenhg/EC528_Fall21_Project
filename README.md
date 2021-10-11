@@ -97,3 +97,6 @@ The team will split the project components in 4 high-level parts:
 
 ## 7. Computing Resources
 The systems needs to run on OpenStack either on MOC or NERC depending on support. 
+
+## 8. Additional Learning Resources
+- [Ray in depth - Academic Paper](https://www.usenix.org/system/files/osdi18-moritz.pdf)

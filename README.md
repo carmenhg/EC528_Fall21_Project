@@ -114,8 +114,8 @@ The systems needs to run on OpenStack either on MOC or NERC depending on support
 - [xray + dask: out-of-core, labeled arrays in Python](http://stephanhoyer.com/2015/06/11/xray-dask-out-of-core-labeled-arrays/)
 
 ## 9. Demo Videos
-- [Demo 1]()
-- [Demo 2]()
+- [Demo 1](https://github.com/carmenhg/EC528_Fall21_Project/blob/main/Demo%20Videos/EC528_Demo_1.mp4)
+- [Demo 2](https://www.youtube.com/watch?v=okqhSW9OlmM)
 
 ## 10. Quizes
-- [Quiz 1]()
+- [Quiz 1](https://docs.google.com/forms/d/1EU4ZGZhsRdSxnkQTF1Rg5YFCBivZypudqNh8dPSu5hU/edit)

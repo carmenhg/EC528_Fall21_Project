@@ -125,7 +125,7 @@ The systems needs to run on OpenStack either on MOC or NERC depending on support
 - [Demo 1](https://github.com/carmenhg/EC528_Fall21_Project/blob/main/Demo%20Videos/EC528_Demo_1.mp4)
 - [Demo 2](https://www.youtube.com/watch?v=okqhSW9OlmM)
 - [Demo 3](https://www.youtube.com/watch?v=15Q9H4_5T5s)
-- [Demo 4]()
+- [Demo 4](https://www.youtube.com/watch?v=GG3KkTXrLek)
 
 
 

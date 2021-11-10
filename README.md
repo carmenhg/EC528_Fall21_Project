@@ -12,11 +12,13 @@ Mentor: John Liagouris.
 ## 1. Vision and Goals Of The Project:
 
 Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system that uses Ray for computation parallelization. Furthermore, we aim to profile the current uses of Ray in the application to identify its end to end performance. 
-The system is actively being used by our client, while running on the MOC platform with significant performance bottlenecks.
+The system is running on the MOC platform with significant performance bottlenecks.
+Many of the current functionality of the data processing part of the pipeline will need to be tested to verify their implementation because of the lack of documentation. 
 A main vision is to have a working system that improves upon the existing prototype by performing faster computation for processing the data collected from the remote sensing system. 
 High level goals for the project include:
 
 * Identify current system performace and the system's bottlenecks.
+* Verify component implementation.
 * Explore Python's computation libraries. 
 * Thoroughly test each of these libraries' performance and comapare with current execution, evaluating tradeoffs such as speed and memory.
 * Integrate the more effective libraries into the system.
@@ -50,6 +52,8 @@ The existing prototype is currently running in the Mass Open Cloud (MOC).
 Our project will run initially with the dev version of the existing prototype at MOC. 
 
 After the initial setup, we will profile the existing uses of Ray as a whole while mostly focusing on the data pre-processing part on the pipeline. 
+
+Various experiments will be run to profile the application's current implementation of data shuffling and chunking among node workers.
 
 The next steps will be to profile the various processes which use the Python library [Xarray: a multidimensional array processing library](http://xarray.pydata.org/en/stable/getting-started-guide/quick-overview.html) and [Dask: a libarry for parallel computing in Python](https://docs.dask.org/en/latest/).
 
@@ -98,6 +102,7 @@ The team will split the project components in 5 high-level parts:
     * Add the prototype to the cluster, one node at a time, and test the performance differences of using different amount of nodes for computations.
 2. Study the application to identify bottlenecks.
     * Profile Ray as it is being used and identify any improvement opportunities.
+        * Tools: [Ray Dashboard](https://docs.ray.io/en/latest/ray-dashboard.html), [Chrome Tracing](https://www.chromium.org/developers/how-tos/trace-event-profiling-tool), [Prometheus](https://docs.ray.io/en/latest/ray-metrics.html)  
     * Research and compute the performance of various Python libraries.
 3. Build a faster and more scalable prototype based on the previous findings.
     * Integrate any libraries that proved to be faster for processing the Raw Image Data.
@@ -112,6 +117,9 @@ The systems needs to run on OpenStack either on MOC or NERC depending on support
 ## 8. Additional Learning Resources
 - [Ray: A Distributed Framework for Emerging AI Applications - Academic Paper](https://www.usenix.org/system/files/osdi18-moritz.pdf)
 - [xray + dask: out-of-core, labeled arrays in Python](http://stephanhoyer.com/2015/06/11/xray-dask-out-of-core-labeled-arrays/)
+- [Prometheus Tool](https://prometheus.io/docs/introduction/overview/)
+- 
+- 
 
 ## 9. Demo Videos
 - [Demo 1](https://github.com/carmenhg/EC528_Fall21_Project/blob/main/Demo%20Videos/EC528_Demo_1.mp4)
@@ -119,4 +127,5 @@ The systems needs to run on OpenStack either on MOC or NERC depending on support
 
 ## 10. Quizes
 - [Quiz 1](https://docs.google.com/forms/d/1EU4ZGZhsRdSxnkQTF1Rg5YFCBivZypudqNh8dPSu5hU/edit)
+
 

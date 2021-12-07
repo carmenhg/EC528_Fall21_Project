@@ -32,8 +32,6 @@ The main goal is to have a working system that improves upon the existing protot
 
 The end users of the finalized prototype are research scientists at NASA JPL who study these remote sensing images datasets. However, the project will be open source and thus available to the community.
 
-v
-
 ## 3. Scope and Features Of The Project
 
 The prototype is a distributed application built with [Ray](https://www.ray.io)

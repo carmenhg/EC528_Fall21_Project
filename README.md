@@ -11,17 +11,14 @@ Mentor: John Liagouris.
 
 ## 1. Vision and Goals Of The Project:
 
-Our project aims to extensively research and test multi-dimensional data processing Python libraries to improve on the current prototype of a remote sensing data processing system that uses Ray for computation parallelization. Furthermore, we aim to profile the current uses of Ray in the application to identify its end to end performance. 
-The system is running on the MOC platform with significant performance bottlenecks.
-Many of the current functionality of the data processing part of the pipeline will need to be tested to verify their implementation because of the lack of documentation. 
+Our project aims to profile the current uses of Ray in the application to identify its end to end performance. 
+The system is running on the MOC platform with significant performance bottlenecks. Many of the current functionality of the data processing part of the pipeline will need to be tested to verify their implementation because of the lack of documentation. 
 A main vision is to have a working system that improves upon the existing prototype by performing faster computation for processing the data collected from the remote sensing system. 
 High level goals for the project include:
 
 * Identify current system performace and the system's bottlenecks.
 * Verify component implementation.
-* Explore Python's computation libraries. 
-* Thoroughly test each of these libraries' performance and comapare with current execution, evaluating tradeoffs such as speed and memory.
-* Integrate the more effective libraries into the system.
+* Understand Python's computation libraries used (Xarray, Dask).
 * Profile Ray application for bottelnecks in parallelization and processes distribution. 
 * Improve over the existing State Of The Art on remote scaling data processing.
 
@@ -59,14 +56,14 @@ The next steps will be to profile the various processes which use the Python lib
 
 By using analytics tools, our goal is to identify the bottlenecks of the pre-processing pipeline, and explore the areas where it can be improved upon.
 
-We will implement, and profile other libraries other than Xarray, which might help us achieve better performance on the pre-processing step of the pipeline.
+We will profile other libraries other than Xarray, which might help us achieve better performance on the pre-processing step of the pipeline.
 
-The final goal of the project is to create  a much faster, and scalabale end to end large scale remote sensing data processing pipeline running in the MOC.
+The final goal of the project is to document current prototype and create a much faster, and scalabale end to end large scale remote sensing data processing pipeline running in the MOC.
 
 ## 4. Solution Concept
 
-Our client will provide us with a working prototype consisting of a platform built on Ray that takes Raw satelitte data images, turns them into time-series and feeds them into a linear regression model for analysis. This platform will help researchers study local effects of climate change on ecosystems all over the world. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
-Our final solution will be an improved prototype of this system as a scalable Python application hosted on MOC. 
+Our client will provide us with a working prototype consisting of a platform built on Ray that takes Raw satelitte data images, turns them into time-series and feeds them into a linear regression model for analysis. This platform will help researchers study local effects of climate change on ecosystems. It will allow for a better understanding of how the Earth's land cover, or the physical makeup of the land, changes over time.
+Our final solution will be an improved prototype of this system hosted on MOC. 
 
 Global Architectural Structure Of the Project:
 
@@ -76,17 +73,17 @@ Design Implications and Discussion:
 
 As it can be seen in the architecture diagram, our project addresses the need to scale, and improve the performance of the existing system before the linear 
 regression model is applied from the data. Other components of the systems, including the model building, and the prediction are already scaled and efficient.
-The major bottleneck of the project is speeding up operations during the phase of pre-processing raw satelite images to time series. We will understand the
-current implementation of the pre-processing system, investigate where the expensive operations are happening, and determine how we can improve upon it by
-testing and instrumenting other alternative approaches. 
-The improvements we will bring on this phase of the pipeline will alow the whole system to be end-to-end scalable. 
+The major bottleneck of the project is speeding up operations during the phase of pre-processing raw satelite images to time series. We will understand the current implementation of the pre-processing system, investigate where the expensive operations are happening, and determine how we can improve upon it by testing and instrumenting the current application. 
+The improvements and findings we will bring on this phase of the pipeline will alow the whole system to be end-to-end scalable. 
 
 ## 5. Acceptance criteria
 
 Minimum goals for this project:
-* At the end of the project timeline the team should have substantial documentation on the performance of the various Python Libraries explored.
-* The final prototype should also have one or more of these instegrated.
-* In addition we will have extensive data results on how Ray is being completely optimized for this prototype.
+* At the end of the project timeline the team should have substantial documentation on the performance of the original application.
+* In addition we will have extensive data results on how Ray could be completely optimized for this prototype.
+* The team must have important findings on ny bottlenecks of the application.
+* There should be an extensive documentation about every step studied and every new implementation to the application. 
+* The performance of the application must have improved, meaning the processing of the data takes less than 2 hours. 
 
 Stretch goals are:
 * Integration and perfromace reviews of all the libraries that can be explored
@@ -126,6 +123,7 @@ The systems needs to run on OpenStack either on MOC or NERC depending on support
 - [Demo 2](https://www.youtube.com/watch?v=okqhSW9OlmM)
 - [Demo 3](https://www.youtube.com/watch?v=15Q9H4_5T5s)
 - [Demo 4](https://www.youtube.com/watch?v=GG3KkTXrLek)
+- [Demo 5]()
 
 
 

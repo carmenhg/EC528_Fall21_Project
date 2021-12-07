@@ -90,7 +90,7 @@ We put our focus on these major fixes:
 
 ### Global Architectural Structure Of the Project
 
-![Diagram](./images/diagram.jpg "Diagram")
+![Diagram](./images/diagram.png "Diagram")
 
 ### Design Implications and Discussion
 

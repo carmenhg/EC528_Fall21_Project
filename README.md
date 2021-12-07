@@ -75,7 +75,7 @@ We put our focus on these major fixes:
 
 Global Architectural Structure Of the Application Prototype And The Project:
 
-<img src="/images/diagram.png" style="height: 400px; width:600px;"/>
+<img src="/images/diagram.png" style="height: 400px; width:700px;"/>
 
 Design Implications and Discussion:
 

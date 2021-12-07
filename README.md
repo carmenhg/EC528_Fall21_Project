@@ -158,7 +158,7 @@ Eventually, the team moved to a bigger cluster with 10 nodes, each with 8 cores,
 * [Demo 3](https://www.youtube.com/watch?v=15Q9H4_5T5s)
 * [Demo 4](https://www.youtube.com/watch?v=GG3KkTXrLek)
 * [Demo 5](https://www.youtube.com/watch?v=acsXzN09634)
-* [Project Wrap Up]()
+* [Project Wrap Up](https://www.youtube.com/watch?v=K6tAO042zGw)
 
 ## Important And Helpful Information
 
